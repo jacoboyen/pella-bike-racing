@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Pella Bike Racing - Dirty Wooden Shoe</title>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300|Oswald:400,300' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			/* Reset ------------------------------- */
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			/* Pella Bike Racing Styles ----------------------------*/
+			
+			html{
+				font-family: 'Ubuntu', sans-serif;
+				background-image: url("images/background.png");
+			}
+			h1{
+				font-size: 3em;
+				font-weight:bold;
+			}
+			h2{
+				font-size: 1.5em;
+			}
+			h3{
+				font-size: 1.25em;
+			}
+			p{
+				font-size: 1em;
+			}
+			
+			#wrapper{
+				width: 80%;
+				margin: 0 auto;
+				box-shadow: 0 0 10px #111111;
+				padding: 1%;
+				background-color: #fff;
+			}
+			#header h1{
+				color: #990000;
+				margin: .25em 0;
+			}
+			#header p{
+				margin: 1em 0;
+			}
+			#headerRight{
+				float: right;
+			}
+			#featuredPhoto img{
+				max-height: 250px;
+				width: 100%;
+			}
+			#nav{
+				background-color: #990000;
+				padding: 1em;
+			}
+			#nav ul li{
+				display: inline;
+				
+			}
+			#nav ul li a:link, #nav ul li a:visited{
+				padding: 1em;
+				color: #fff;
+				text-decoration: none;
+			}
+			#nav ul li a:hover{
+				background-color: #fff;
+				color: #990000;
+			}
+			#leftColumn{
+				float:left;
+				width:30%;
+				margin-top: .5em;
+			}
+			#sponsors{
+				border: 1px solid #ccc;
+				padding: .5em;
+				text-align: center;
+			}
+			#sponsors img{
+				width: 75%;	
+			}
+			#leftColumn h2{
+				background-color: #990000;
+				color: #fff;
+				padding: .25em;
+				font-weight: bold;
+			}
+			#rightColumn{
+				float: right;
+				width: 65%;
+				margin-top: .5em;
+			}
+			#rightColumn h2{
+				color: #990000;
+				padding: .25em;
+				font-weight: bold;
+				border-bottom: 1px solid #990000;
+				margin-bottom: .5em;
+			}
+			#rightColumn h3{
+				margin: .5em;	
+			}
+			#rightColumn p{
+				margin: 1em;
+				line-height:1.2em;
+			}
+			.button{
+				padding: .75em;
+				border-radius:.5em;
+				color: #fff;
+				font-size: 1.2em;
+				background-color: #990000;
+				border:1px solid #330000;
+				text-decoration: none;
+				text-transform:uppercase;
+			}
+			.button:hover{
+				background-color: #cb2026;
+			}
+			.clearBoth{
+				clear:both;
+			}
+			
+			/* Custom element styles --------------------------*/
+			/* ------------------ Global Classes for styling elements  -------------------- */
+			table, td, th{
+				margin: 5px;
+				padding: 5px;
+			}
+			table{
+				width: 100%;
+			}
+			td{
+				line-height: 1.2em;
+			}
+			table tr.gray{
+				background-color: #d8d8d8;
+			}
+			/* BaseTable styles */
+			table.tableBase{
+				width: 80%;
+				margin: 0 auto;	
+			}
+			.centerTable{
+				margin: 0 auto;
+				width: 80%;
+			}
+			
+			/*For IE*/
+			.tableTextAlignLeft td{
+				text-align:left;
+			}
+			
+			/* Table that boxes in the contents */
+			.tableBox th{
+				font-weight:bold;
+				background-color: #990000;
+				color: #fff;
+				border:1px solid #990000;
+			}
+			.tableBox td{
+				border: 1px solid #ccc;
+			}
+			
+		
+		</style>
+        <meta property="og:site_name" content="Pella Bike Racing"/>
+		<meta property="og:description" content="Pella Bike Racing, the home of the Dirty Wooden Shoe Race"/>
+		<meta property="og:url" content="http://www.pellabikeracing.com"/>
+		<meta property="og:title" content="Pella Bike Racing"/>
+		<meta property="og:image" content="">
+
+	</head>
+
+	<body>
+    <div id="wrapper">
+    	<div id="header">
+            <h1>Pella Bike Racing</h1>
+            <p>Home of the Dirty Wooden Shoe Cyclocross race Sept. 21-22, 2013</p>
+            
+            <div id="featuredPhoto">
+            	<img src="images/banner.jpg" alt="Cover Photo">
+            </div>
+            
+        </div>
+        
+        <div id="nav">
+        	<ul>
+            	<li><a href="https://www.usacycling.org/register/2013-3286">Register Online</a></li>
+			</ul>
+		</div>
+        <div id="leftColumn">
+        	<h2>Sponsors</h2>
+        	<div id="sponsors">
+            	<p><a href="http://nickscf.com"><img src="images/nickscf.jpg"></a></p>
+                <p><a href="http://www.dsipella.com/"><img src="images/dsiLogo.gif"></a></p>
+                
+			</div>
+		</div>
+        <div id="rightColumn">
+        	<h2>The Dirty Wooden Shoe presented by Pella Bike Racing</h2>
+            <p>Wooden shoes are up for grabs again at the Dirty Wooden Shoe 'cross race. Registration opens at 9 a.m. and closes 15 minutes before each race.</p>
+            <h2>Save $10 - Register Online!</h2>
+            <p> Racers registering for both days of racing will receive a complimentary t-shirt.</p>
+            <p>&nbsp;</p>
+            <p align="center"><a href="https://www.usacycling.org/register/2013-3286" class="button">Register Today!</a> <a href="http://www.usacycling.org/events/getflyer.php?permit=2013-3286" class="button">Race Flyer</a></p>
+            <p>&nbsp;</p>
+            <h2>Race Schedule</h2>
+            <p>Relax, all information is the same for both Saturday and Sunday!</p>
+            <table class="tableBox">
+            <tr>
+            	<th>Category</th>
+                <th>Entry</th>
+                <th>Time</th>
+                <th>Distance</th>
+                <th>Prizes</th>
+			</tr>
+            <tr>
+            	<td>Masters 35+</td>
+                <td>$25</td>
+                <td>10 a.m.</td>
+                <td>40 min.</td>
+                <td>$40/$30/$25/$20/$15</td>
+			</tr>
+            <tr>
+              <td>Masters 45+</td>
+              <td>$25</td>
+              <td>10 a.m.</td>
+              <td>40 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr>
+              <td>Masters 55+</td>
+              <td>$25</td>
+              <td>10 a.m.</td>
+              <td>40 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr class="gray">
+              <td>CX3</td>
+              <td>$25</td>
+              <td>11 a.m.</td>
+              <td>45 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr>
+              <td>Women 1/2/3</td>
+              <td>$25</td>
+              <td>Noon</td>
+              <td>35 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr>
+              <td>Women 4</td>
+              <td>$25</td>
+              <td>Noon</td>
+              <td>35 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr>
+              <td>Women 35+</td>
+              <td>$25</td>
+              <td>Noon</td>
+              <td>35 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr class="gray">
+              <td>CX 1/2/3</td>
+              <td>$25</td>
+              <td>12:45 p.m.</td>
+              <td>35 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr>
+              <td>CX 4</td>
+              <td>$25</td>
+              <td>2 p.m.</td>
+              <td>35 min.</td>
+              <td>$40/$30/$25/$20/$15</td>
+              </tr>
+            <tr>
+              <td>CX 5</td>
+              <td>$25</td>
+              <td>2 p.m.</td>
+              <td>35 min.</td>
+              <td>Merch. 5 places</td>
+            </tr>
+            <tr>
+              <td>Juniors</td>
+              <td>$25</td>
+              <td>2 p.m.</td>
+              <td>35 min.</td>
+              <td>Merch. 5 places</td>
+            </tr>
+            </table>
+			<h2>Course Location</h2>
+             <div align="center"><p><iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?msid=207225677381002224568.0004ad9c62aff21c1ad7a&amp;msa=0&amp;ie=UTF8&amp;ll=41.3664,-92.9902&amp;spn=0.382036,0.617294&amp;t=m&amp;vpsrc=6&amp;output=embed"></iframe></p>
+              </p></div>
+		</div>
+        <div class="clearBoth"></div>
+	</div>
+	</body>
+</html>
