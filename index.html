@@ -1,206 +1,30 @@
 <!doctype html>
 <html lang="en">
 		<head>
-		<title>Pella Bike Racing - Dirty Wooden Shoe</title>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300|Oswald:400,300' rel='stylesheet' type='text/css'>
-		<style type="text/css">
-/* Reset ------------------------------- */
+  		<title>Pella Bike Racing - Dirty Wooden Shoe</title>
+  		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300|Oswald:400,300' rel='stylesheet' type='text/css'>
+      <link href="css/styles.css" rel='stylesheet' type='text/css'>
 
-
-html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre,  a, abbr, acronym, address, big, cite, code,  del, dfn, em, img, ins, kbd, q, s, samp,  small, strike, strong, sub, sup, tt, var,  b, u, i, center,  dl, dt, dd, ol, ul, li,  fieldset, form, label, legend,  table, caption, tbody, tfoot, thead, tr, th, td,  article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary,  time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,  q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Pella Bike Racing Styles ----------------------------*/
-
-			
-
-html {
-	font-family: 'Ubuntu', sans-serif;
-	background-image: url("images/background.png");
-}
-h1 {
-	font-size: 3em;
-	font-weight: bold;
-}
-h2 {
-	font-size: 1.5em;
-}
-h3 {
-	font-size: 1.25em;
-}
-p {
-	font-size: 1em;
-}
-#wrapper {
-	width: 80%;
-	margin: 0 auto;
-	box-shadow: 0 0 10px #111111;
-	padding: 1%;
-	background-color: #fff;
-}
-#header h1 {
-	color: #990000;
-	margin: .25em 0;
-}
-#header p {
-	margin: 1em 0;
-}
-#headerRight {
-	float: right;
-}
-#featuredPhoto img {
-	width: 100%;
-}
-#nav {
-	background-color: #990000;
-	padding: 1em;
-}
-#nav ul li {
-	display: inline;
-}
-#nav ul li a:link, #nav ul li a:visited {
-	padding: 1em;
-	color: #fff;
-	text-decoration: none;
-}
-#nav ul li a:hover {
-	background-color: #fff;
-	color: #990000;
-}
-#leftColumn {
-	float: left;
-	width: 30%;
-	margin-top: .5em;
-}
-#sponsors {
-	border: 1px solid #ccc;
-	padding: .5em;
-	text-align: center;
-}
-#sponsors img {
-	width: 75%;
-}
-#leftColumn h2 {
-	background-color: #990000;
-	color: #fff;
-	padding: .25em;
-	font-weight: bold;
-}
-#rightColumn {
-	float: right;
-	width: 65%;
-	margin-top: .5em;
-}
-#rightColumn h2 {
-	color: #990000;
-	padding: .25em;
-	font-weight: bold;
-	border-bottom: 1px solid #990000;
-	margin-bottom: .5em;
-}
-#rightColumn h3 {
-	margin: .5em;
-}
-#rightColumn p {
-	margin: 1em;
-	line-height: 1.2em;
-}
-.button {
-	padding: .75em;
-	border-radius: .5em;
-	color: #fff;
-	font-size: 1.2em;
-	background-color: #990000;
-	border: 1px solid #330000;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-.button:hover {
-	background-color: #cb2026;
-}
-.clearBoth {
-	clear: both;
-}
-/* Custom element styles --------------------------*/
-
-			/* ------------------ Global Classes for styling elements  -------------------- */
-
-table, td, th {
-	margin: 5px;
-	padding: 5px;
-}
-table {
-	width: 100%;
-}
-td {
-	line-height: 1.2em;
-}
-table tr.gray {
-	background-color: #d8d8d8;
-}
-/* BaseTable styles */
-
-table.tableBase {
-	width: 80%;
-	margin: 0 auto;
-}
-.centerTable {
-	margin: 0 auto;
-	width: 80%;
-}
-/*For IE*/
-
-.tableTextAlignLeft td {
-	text-align: left;
-}
-/* Table that boxes in the contents */
-
-.tableBox th {
-	font-weight: bold;
-	background-color: #990000;
-	color: #fff;
-	border: 1px solid #990000;
-}
-.tableBox td {
-	border: 1px solid #ccc;
-}
-</style>
-		<meta property="og:site_name" content="Pella Bike Racing"/>
-		<meta property="og:description" content="Pella Bike Racing, the home of the Dirty Wooden Shoe Race"/>
-		<meta property="og:url" content="http://www.pellabikeracing.com"/>
-		<meta property="og:title" content="Pella Bike Racing"/>
-		<meta property="og:image" content="">
+  		<meta property="og:site_name" content="Pella Bike Racing"/>
+  		<meta property="og:description" content="Pella Bike Racing, the home of the Dirty Wooden Shoe Race"/>
+  		<meta property="og:url" content="http://www.pellabikeracing.com"/>
+  		<meta property="og:title" content="Pella Bike Racing"/>
+  		<meta property="og:image" content="">
 		</head>
 
 		<body>
-        <div id="wrapper">
+      <nav class="topNavigation">
+          <ul>
+            <li><a href="https://www.usacycling.org/register/2014-2675">Register</a></li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </nav>
+      <div class="heroPhoto">
+        <img src="images/banner.png" alt="Dirty Wooden Shoe presented by Peace Tree Brewery">
+      </div>
+
+        <!-- <div id="wrapper">
           <div id="header">
             <h1>Pella Bike Racing            </h1>
             <div id="featuredPhoto"> <img src="images/banner.png" alt="Cover Photo"> </div>
@@ -319,6 +143,6 @@ table.tableBase {
             <p>Holiday Inn Express at Bos Landen</p>
           </div>
           <div class="clearBoth"></div>
-        </div>
+        </div> -->
 </body>
 </html>
