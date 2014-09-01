@@ -36,6 +36,7 @@ html {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+
 .heroPhoto img{
 	width: 100%;
 }
@@ -85,10 +86,44 @@ nav.topNavigation ul li a:hover{
 	margin: 1em 0;
 	line-height: 1.5em;
 }
+#contentArea a:link, #contentArea a:visited{
+	color: #88131c;
+}
+#contentArea a:hover{
+	color: #cb2026;
+	text-decoration: none;
+}
 #contentArea .photo{
 	width: 100%;
 	border-radius: 1em;
 }
+#contentArea iframe{
+	border: 1px solid #000;
+}
+table, td, th {
+	margin: 5px;
+	padding: 5px;
+}
+table {
+	width: 100%;
+}
+td {
+	line-height: 1.2em;
+}
+
+table tr.gray {
+	background-color: #d8d8d8;
+}
+.tableBox th {
+	font-weight: bold;
+	background-color: #88131c;
+	color: #fff;
+	border: 1px solid #88131c;
+}
+.tableBox td {
+	border: 1px solid #ccc;
+}
+
 /* ------------------------------------------- */
 /* Sponsors */
 .icon-RingOMatic {
