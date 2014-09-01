@@ -42,8 +42,10 @@ html {
 nav{
 	width: 100%;
 	background-color: #d4710f;
-	color: #fff;
+	
+	font-weight: bold;
 	text-transform: uppercase;
+	text-align: center;
 }
 nav.topNavigation{
 	list-style-type: none;
@@ -54,15 +56,38 @@ nav.topNavigation ul li{
 
 }
 nav.topNavigation ul li a{
-	color: #fff;
+	color: #1f0e00;
 	padding: 1em;
 	text-decoration:  none;
 }
 nav.topNavigation ul li a:hover{
 	background-color: #88131c;
+	color: #fff;
 }
 .heroPhoto img{
 	display:block;
+}
+#contentArea{
+	width: 60%;
+	padding: 2em;
+	margin: 0 auto;
+}
+#contentArea h1{
+	font-size: 2em;
+	font-weight:bold;
+	margin-bottom: .5em;
+}
+#contentArea h2{
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+#contentArea p{
+	margin: 2em 0;
+	line-height: 1.5em;
+}
+#contentArea .photo{
+	width: 100%;
+	border-radius: 1em;
 }
 /* ------------------------------------------- */
 /* Sponsors */
