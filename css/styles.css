@@ -126,53 +126,67 @@ table tr.gray {
 
 /* ------------------------------------------- */
 /* Sponsors */
-.icon-RingOMatic {
-  background-image: url(/images/sprite.png);
+#sponsors{
+	text-align:center;
+}
+#sponsors p{
+	color: #999;
+}
+.icon-RingOMatic{
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px 0px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
-.icon-RingOMaticFull {
-  background-image: url(/images/sprite.png);
+.icon-RingOMatic:hover {
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px -150px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
 .icon-dsi {
-  background-image: url(/images/sprite.png);
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px -300px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
-.icon-dsiFull {
-  background-image: url(/images/sprite.png);
+.icon-dsi:hover {
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px -450px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
 .icon-iowaBike {
-  background-image: url(/images/sprite.png);
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px -600px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
-.icon-iowaBikeFull {
-  background-image: url(/images/sprite.png);
+.icon-iowaBike:hover {
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px -750px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
 .icon-nicksCF {
-  background-image: url(/images/sprite.png);
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px -900px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
-.icon-nicksCFFull {
-  background-image: url(/images/sprite.png);
+.icon-nicksCF:hover {
+  background-image: url(http://www.pellabikeracing.com/images/sprite.png);
   background-position: 0px -1050px;
   width: 150px;
   height: 150px;
+  display: inline-block
 }
 /* ------------------------------------------- */
 
